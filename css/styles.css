@@ -110,7 +110,7 @@ nav{
 
   .slider-text .deal-text {
 background-image: url(../images/shape/1.png);
-    background- repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     padding: 18px 42px;
@@ -144,7 +144,7 @@ background-image: url(../images/shape/1.png);
     margin-bottom: 300px;
   }
 
-  @media (max-width: 768px){
+  @media only screen and (max-width: 768px){
     .d-md-block {
       display: block;
     }
@@ -162,7 +162,7 @@ background-image: url(../images/shape/1.png);
 
 
 /*style for best_burgers_area*/
-.container{
+.best_burgers_area .container{
   padding: 1% 0%;
   background-color: #fff;
   margin-top: 600px;
@@ -294,6 +294,185 @@ font-family: "Raleway",sans-serif;
 
 }
 
+
+/* Testmoinal Section  */
+
+.testimonial_area {
+  background: #fff;
+  padding   : 120px 0 115px 0;
+}
+
+
+
+.testimonial_area .single_testmonial p {
+  color      : #040E27;
+  font-weight: 400;
+  font-size  : 20px;
+  line-height: 32px;
+  margin-top : 0px;
+}
+
+.testimonial_area  .testmonial_author {
+  margin-top: 45px;
+}
+
+.testimonial_area .testmonial_author .thumb {
+  width                : 68px;
+  height               : 68px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius   : 50%;
+  border-radius        : 50%;
+  margin               : auto;
+  margin               : auto auto 7px auto;
+}
+
+.testimonial_area .testmonial_author h4 {
+  color        : #040E27;
+  font-size    : 16px;
+  font-weight  : 600;
+  margin-bottom: 5px;
+  font-family  : "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+.testimonial_area .testmonial_author span {
+  font-size  : 14px;
+  font-weight: 400;
+  color      : #7A838B;
+}
+
+.testimonial_area .section_title h3 {
+  margin-bottom: 50px;
+}
+
+.testimonial_area .owl-carousel .owl-item img {
+  display: inline-block;
+  width  : auto;
+}
+
+ .owl-carousel .owl-nav div.owl-next {
+  left : auto;
+  right: 0;
+}
+
+ .owl-carousel .owl-nav div {
+  left       : 0;
+  border     : 1px solid #B9B5B2;
+  color      : #1A0D01;
+  width      : 40px;
+  height     : 40px;
+  text-align : center;
+  line-height: 40px;
+  font-size  : 12px;
+  top        : 20%;
+}
+
+ .owl-carousel .owl-nav div:hover {
+  background: #B9B5B2;
+  color     : #fff;
+}
+
+.mb-60 {
+  margin-bottom: 62px;
+}
+
+.testimonial_area .stars{
+  font-size: 13px;
+  color    : #F2C64D;
+}
+
+/* Instagram Section  */
+
+.instragram_area .single_instagram {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .instragram_area .single_instagram {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .instragram_area .single_instagram {
+    width: 100%;
+  }
+}
+
+
+.instragram_area .single_instagram img {
+  width: 100%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.instragram_area .single_instagram .ovrelay {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  background: rgba(26, 13, 1, 0.3);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  right: 15px;
+  border-radius: 50%;
+  border: 1px dashed #fff;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+
+.instragram_area .single_instagram .ovrelay a {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.instragram_area .single_instagram:hover .ovrelay {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.instragram_area .single_instagram:hover img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 /* Footer Section */
 
 footer {
@@ -321,14 +500,16 @@ footer .title{
 }
 footer .address{
   margin-bottom: 30px;
-  padding: 0 60px;
+  padding: 0 10px;
 }
 
 footer .description{
-  padding: 0 20px;
+  padding: 10px;
+  width: 100%;
 }
 
 footer .no {
+  width: 100%;
   color: #F0542C;
   font-size: 1.4rem;
   font-weight: bold;
